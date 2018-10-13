@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <title class="elegantshadow">$title$</title>
+    <script src="assets/js/particles.js" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+    <div class="paper title-page" id="particles-js">
+        <h3 class="subtitle">$title$</h3>
+        <h1 class="title">$author.name$</h1>
+        <script src="assets/js/particleTest.js" type="text/javascript"></script>
+
+    
+    </div>
+    <div class="paper intro-page" id="particles-js4">
+        <div class="author-intro">
+            $if(author.img)$<img src="assets/imgs/$author.img$" alt="$author$">$endif$
+            $if(author.description)$<blockquote>$author.description$</blockquote>$endif$
+        </div>
+        <script src="assets/js/particleTest4.js" type="text/javascript"></script>
+    </div>
+    <div class="paper timeline-page" id="particles-js2">
+        $if(academic)$
+        <h2>Academic studies</h2>
+        <div class="timeline">
+            <ol>
+                $for(academic)$
+                <li>
+                <div>
+                    <h3>$academic.date$</h3>
+                    <p>$academic.description$</p>
+                    <h6>$academic.institution$</h6>
+                </div>
+                </li>
+                $endfor$
+                <li></li>
+            </ol>
+        </div>
+        $endif$
+        <h2>Latest experience</h2>
+        <div class="timeline">
+            <ol>
+                $for(experience)$
+                <li>
+                <div>
+                    <h3>$experience.date$</h3>
+                    <p>$experience.description$</p>
+                    <h6>$experience.employer$</h6>
+                </div>
+                </li>
+                $endfor$
+                <li></li>
+                </ol>
+        </div>
+        <script src="assets/js/particleTest2.js" type="text/javascript"></script>
+    </div>
+    <div class="paper section-title" id="particles-js3">
+        <h2>Projects</h2>
+        <script src="assets/js/particleTest3.js" type="text/javascript"></script>
+
+
+    </div>
+    $for(projects)$
+    <div class="paper project">
+        <div class="project-images">
+            $if(projects.images)$
+                $for(projects.images)$
+                <div style="background-image: url($projects.images$)"></div>
+                $endfor$
+            $else$
+                <div style="background-color: red"></div>
+                <div style="background-color: rebeccapurple"></div>
+                <div style="background-color: wheat"></div>
+            $endif$    
+        </div>
+        <div class="project-details">
+            <div class="main-details">
+                $if(projects.title)$<h1>$projects.title$</h1>$endif$
+                $if(projects.subtitle)$<h4>$projects.subtitle$</h4>$endif$
+                $if(projects.keywords)$
+                <div class="tags">
+                    $for(projects.keywords)$
+                    <div class="tag">$projects.keywords$</div>
+                    $endfor$
+                </div>
+                $endif$
+                $if(projects.description)$<p>$projects.description$</p>$endif$
+            </div>
+            <div class="side-details">
+                <div class="details">
+                    <h3>Details</h3>
+                    $if(projects.author)$
+                    <div class="row" id="author">
+                        <h6>Author:</h6>
+                        $for(projects.author)$<p>$projects.author$</p>$endfor$
+                    </div>
+                    $endif$
+                    $if(projects.date)$
+                    <div class="row" id="date"><h6>Date:</h6><p>$projects.date$</p></div>
+                    $endif$
+                    $if(projects.website)$
+                    <div class="row" id="website">
+                        <h6>Website:</h6>
+                        <a href="$projects.website$">$projects.website$</a>
+                    </div>
+                    $endif$
+                    $if(projects.location)$
+                    <div class="row" id="location"><h6>Site:</h6><p>$projects.location$</p></div>
+                    $endif$
+                    $if(projects.details)$$for(projects.details)$
+                    <div class="row"><h6>$projects.details.name$:</h6><p>$projects.details.data$</p></div>
+                    $endfor$$endif$
+                </div>
+            </div>
+            $if(projects.tabs)$
+            <div class="tabs">
+                $for(projects.tabs)$
+                <div class="tab"><p>$projects.tabs$</p></div>
+                $endfor$
+            </div>
+            $endif$
+        </div>
+    </div>
+    $endfor$
+
+    <div class="paper acknowledgments"></div>
+    <div class="paper how"></div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+- title: Geodesic Patterns for Freeform Architecture
+  subtitle: Master Thesis - C# Implementation
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu turpis egestas. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Quis vel eros donec ac odio. Gravida quis blandit turpis cursus in hac habitasse platea. Felis donec et odio pellentesque diam volutpat commodo. Sed id semper risus in hendrerit gravida rutrum quisque non. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Amet consectetur adipiscing elit pellentesque habitant morbi.
+  author: 
+  - Alan Rynne
+  date: September 2018
+  website: http://bit.ly/geoPattrn
+  images:
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  details:
+  - name: Grade
+    data: 10/10
+  - name: University
+    data: ETSAV - UPC
+  tabs:
+  - Rhino
+  - Grasshopper
+  - C#
+  - Optimization
+
+  keywords:
+  - Architectural Geometry
+  - Fabrication-aware design
+  - Freeform architecture

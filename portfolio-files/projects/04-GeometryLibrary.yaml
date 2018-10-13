@@ -1,0 +1,18 @@
+- title: C# Architectural Geometry Library
+  subtitle: Compatible with Grasshopper and Dynamo
+  description: After finishing my Master's Degree, I started an Open Source project to bring together all the scripts I have been developing into a more accessible and easy to use library. Currently, it supports basic mesh operations based on the 'half-edge mesh' concept, geodesic paths on meshes by solving the 'initial value problem' and the generation of geodesic patterns for panelization with planks, and other utility algorithms like water-drainage on meshes, calculating level-sets, etc. This library is still a work in progress.
+  author: Alan Rynne
+  date: October 2018
+  website: www.rynne.es
+  images:
+  - 
+  details:
+  - name: Status
+    data: Under development
+  tabs:
+  - 
+  keywords:
+  - C#
+  - Open Source
+  - Grasshopper
+  - Dynamo

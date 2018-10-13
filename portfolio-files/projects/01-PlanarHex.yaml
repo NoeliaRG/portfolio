@@ -1,0 +1,28 @@
+- title: Panneling with Planar Hexagons
+  subtitle: 
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu turpis egestas. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Quis vel eros donec ac odio. Gravida quis blandit turpis cursus in hac habitasse platea. Felis donec et odio pellentesque diam volutpat commodo. Sed id semper risus in hendrerit gravida rutrum quisque non. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Amet consectetur adipiscing elit pellentesque habitant morbi.
+  author: 
+  - Alan Rynne
+  - Thiago Medeiros
+  - David Granzewich
+  date: September 2017
+  website: www.rynne.es
+  location: Barcelona (Spain)
+  images:
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  details:
+  - name: Det.title
+    data: Some detail...
+  tabs:
+  - One thing
+  - Second
+  - More stuff
+  - And another
+  - ...
+  - The last one!
+  keywords:
+  - Complex panneling solutions
+  - Architectural geometry

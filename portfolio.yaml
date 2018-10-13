@@ -1,0 +1,191 @@
+---
+title: Portfolio 2018
+author:
+  name: Alan Rynne
+  img: blog-author.jpg
+  description: Hi! My name is Alan Rynne, I'm a Building Engineer....
+
+timeline:
+  - date:
+    name:
+    description:
+    category:
+  - date:
+    name:
+    description:
+    category:
+
+academic:
+  - date: 2011
+    description: Building Engineer (Arquitecto Técnico)
+    institution: UEM (Madrid, Spain)
+  - date: 2012
+    description: Building Energy certification course
+    institution: COATM (Madrid, Spain)
+  - date: 2014
+    description: Traditional wood-building intensive course
+    institution: Shelter Institute (Maine, US)
+  - date: 2018
+    description: Master Degree Parametric Design in Architecture
+    institution: UPC (Barcelona, Spain)
+
+experience:
+  - date: 2011-2013
+    description: Web-designer / Community Manager
+    employer: Versalia Traducción (Madrid, Spain)
+  - date: 2013-2015
+    description: Founder & Construction Manager
+    employer: DBS (Querétaro, México)
+  - date: 2015-2017
+    description: Real Estate Agent
+    employer: Engel&Völkers / Vivienda2 (Madrid, Spain)
+  - date: 2018
+    description: Took a year to study!
+    employer: Unnemployed
+projects:
+- title: Geodesic Patterns for Freeform Architecture
+  subtitle: Master Thesis - C# Implementation
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu turpis egestas. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Quis vel eros donec ac odio. Gravida quis blandit turpis cursus in hac habitasse platea. Felis donec et odio pellentesque diam volutpat commodo. Sed id semper risus in hendrerit gravida rutrum quisque non. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Amet consectetur adipiscing elit pellentesque habitant morbi.
+  author: 
+  - Alan Rynne
+  date: September 2018
+  website: http://bit.ly/geoPattrn
+  images:
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  details:
+  - name: Grade
+    data: 10/10
+  - name: University
+    data: ETSAV - UPC
+  tabs:
+  - Rhino
+  - Grasshopper
+  - C#
+  - Optimization
+
+  keywords:
+  - Architectural Geometry
+  - Fabrication-aware design
+  - Freeform architecture
+- title: Panneling with Planar Hexagons
+  subtitle: 
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu turpis egestas. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas. Quis vel eros donec ac odio. Gravida quis blandit turpis cursus in hac habitasse platea. Felis donec et odio pellentesque diam volutpat commodo. Sed id semper risus in hendrerit gravida rutrum quisque non. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Amet consectetur adipiscing elit pellentesque habitant morbi.
+  author: 
+  - Alan Rynne
+  - Thiago Medeiros
+  - David Granzewich
+  date: September 2017
+  website: www.rynne.es
+  location: Barcelona (Spain)
+  images:
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  details:
+  - name: Det.title
+    data: Some detail...
+  tabs:
+  - One thing
+  - Second
+  - More stuff
+  - And another
+  - ...
+  - The last one!
+  keywords:
+  - Complex panneling solutions
+  - Architectural geometry
+- title: Chebyshev Net Generation
+  subtitle: Grasshopper component implemented in C#
+  description: Chebyshev nets are a spetial kind of 3D grid composed only of segments of equal length. They are of special interest when designing elastically-bent gridshells, since the equal length property guarantees that the grid could be assembled 'flat' on-site, and later bent to it's final shape by either manual or mechanical means. 
+  author: 
+  - Alan Rynne
+  date: January 2018
+  website: http://bit.ly/chebNet
+  images:
+  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+
+  details:
+  - name: Det.title
+    data: Some detail...
+  tabs:
+  - Grasshopper
+  - Rhino
+  - C#
+  keywords:
+  - Gridshell design
+  - Active-bending structures
+
+- title: Triangular Gridshell
+  subtitle: Design & Construction of an actively-bent dome
+  description: 
+  author: 
+    - Alan Rynne
+    - Martina Fabré
+    - Jatziri Rodriguez
+    - Noelia Rodriguez
+    - Christian Dimitri
+    - Martí Sais
+  date: June 2018
+  images:
+  - 
+  details:
+  - name: Photo cred.
+    data: Andrés Flajszer
+  tabs:
+  - ø6m
+  - GRFP
+  keywords:
+  - Active-bending
+  - Dome structure
+  - Elastic membrane
+- title: C# Architectural Geometry Library
+  subtitle: Compatible with Grasshopper and Dynamo
+  description: After finishing my Master's Degree, I started an Open Source project to bring together all the scripts I have been developing into a more accessible and easy to use library. Currently, it supports basic mesh operations based on the 'half-edge mesh' concept, geodesic paths on meshes by solving the 'initial value problem' and the generation of geodesic patterns for panelization with planks, and other utility algorithms like water-drainage on meshes, calculating level-sets, etc. This library is still a work in progress.
+  author: Alan Rynne
+  date: October 2018
+  website: www.rynne.es
+  images:
+  - 
+  details:
+  - name: Status
+    data: Under development
+  tabs:
+  - 
+  keywords:
+  - C#
+  - Open Source
+  - Grasshopper
+  - Dynamo
+- title: Cutty Sark Pavillion
+  subtitle: A case study
+  description: 
+  author: 
+  - Alan Rynne
+  - Uri Lewis
+  date: February 2018
+  images:
+  - 
+  details:
+  - name: 
+    data: 
+  tabs:
+  - 
+  keywords:
+  - Hybrid structures
+  - Building adaptation
+  - Lightweight construction
+- title: Urban Landscaping
+  subtitle: 
+  description: 
+  author: Alan Rynne
+  date: May 2018
+  images:
+  - 
+  keywords:
+  - 
+  - 
+---
