@@ -1,20 +1,25 @@
 ---
-title: Portfolio 2018
+title: 2018 Portfolio
 author:
   name: Alan Rynne
   img: blog-author.jpg
-  description: Hi! My name is Alan Rynne, I'm a Building Engineer....
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-timeline:
-  - date:
-    name:
-    description:
-    category:
-  - date:
-    name:
-    description:
-    category:
-
+social:
+  - username: www.rynne.es
+    link: https://rynne.es
+    logo: fas fa-user
+  - username: /alanrynnevidal
+    link: https://es.linkedin.com/in/alanrynnevidal
+    logo: fab fa-linkedin-in
+  - username: /AlanRynne
+    link: http://github.com/AlanRynne
+    logo: fab fa-github
+  - username: alan@rynne.es
+    link: mailto:alan@rynne.es
+    logo: far fa-envelope
+    
+  
 academic:
   - date: 2011
     description: Building Engineer (Arquitecto Técnico)

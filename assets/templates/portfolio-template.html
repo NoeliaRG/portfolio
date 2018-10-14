@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <title class="elegantshadow">$title$</title>
     <script src="assets/js/particles.js" type="text/javascript"></script>
-
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 
 <body>
     <div class="paper title-page" id="particles-js">
-        <h3 class="subtitle">$title$</h3>
         <h1 class="title">$author.name$</h1>
+        <h3 class="subtitle">$title$</h3>
         <script src="assets/js/particleTest.js" type="text/javascript"></script>
 
     
@@ -63,8 +62,6 @@
     <div class="paper section-title" id="particles-js3">
         <h2>Projects</h2>
         <script src="assets/js/particleTest3.js" type="text/javascript"></script>
-
-
     </div>
     $for(projects)$
     <div class="paper project">
@@ -128,9 +125,28 @@
         </div>
     </div>
     $endfor$
-
+    $if(acknowledgments)$
     <div class="paper acknowledgments"></div>
+    $endif$
+    $if(how)$
     <div class="paper how"></div>
-
+    $endif$
+    $if(social)$
+    <div class="paper social" id="particles-js5">
+        <blockquote>You can always contact me at...</blockquote>
+        <div>
+            $for(social)$
+            <a href="$social.link$">
+                <i class="$social.logo$ fa-4x"></i>
+                <p>$social.username$</p>
+            </a>
+            $endfor$
+        </div>
+        <blockquote>... or download my updated documents from:</blockquote>
+        <a href="http://cv.rynne.es">cv.rynne.es</a>
+        <a href="http://portfolio.rynne.es">portfolio.rynne.es</a>
+        <script src="assets/js/particleTest5.js" type="text/javascript"></script>
+    </div>
+    $endif$
 </body>
 </html>

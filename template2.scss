@@ -1,0 +1,212 @@
+body{
+    margin: 0em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.paper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+@mixin img-clip-path{
+    clip-path: polygon(
+        0 0,
+        50vw 0,
+        60vw 15vw,
+        50vw 100vw,
+        0 100vw
+    );
+}
+@mixin img-clip-path-short{
+    clip-path: polygon(
+        0 0,
+        50vw 0,
+        60vw 15vw,
+        50vw 30vw,
+        0 30vw
+    );
+}
+
+body{
+    counter-reset: projects;
+    counter-increment: projects;
+    counter-reset: pages;
+}
+.project{
+    overflow: hidden;
+    position: relative;
+    counter-reset: figures;
+
+    .image{
+        min-width: 60%;
+        max-width: 60%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        @include img-clip-path();
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+
+        .proj-image{
+            position: relative;
+            content: attr(img);
+            height: 100%;
+            z-index: 50;
+            background-position: center;
+            background-size: cover;
+            flex-basis: 100%;
+            min-height: 33%;
+            counter-increment: figures;
+
+            .caption{
+                max-width: 30%;
+            }
+        }
+
+    }
+    .image :not(:last-child){
+        margin-bottom: 0.3em;
+    }
+
+    .shadow{
+        width: 60%;
+        height: 30%;
+        position: absolute;
+        left: 3em;
+        background: rgba(black, 0.2);
+        @include img-clip-path();
+        z-index: -1;
+
+
+        
+
+    }
+    .shadow.white{
+        background-color: white;
+        left: 1em;
+    }
+    .data{
+        margin: 3em;
+        display: flex;
+        flex-direction: column;
+
+        .title{
+            margin-block-end: 0em;
+            margin-block-start: 0em;
+            text-shadow: 0.7pt 0.7pt 0px #fff, 1.4pt 1.4pt 0px rgba(steelblue,0.35);
+
+        }
+        .subtitle{
+            margin-block-end: 0em;
+            margin-block-start: 0em;
+            text-indent: 1.5em;
+            font-style: italic;
+            font-weight: 100;
+            color: gray;
+        }
+
+        .project-data{
+            flex: 1;
+            padding-left: calc(50% + 0.15em);
+            color: dimgray;
+            text-align: justify;
+            line-height: 120%;
+        }
+    }
+    .details-tags{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: calc(15vw - 1.2em);
+        left: 55vw;
+        min-height: 15em;
+        min-width: 18em;
+        text-align: right;
+        z-index: -1;
+        font-size: 80%;
+        transform: skewX(-6deg);
+
+        h1,h2,h3,h4,h5,h6,p{
+            margin-block-end: 0.5em;
+            margin-block-start: 0em;
+            border-bottom: 1px solid gainsboro;
+            transform: skewX(6deg);
+            padding-right: 0.5em;
+
+        
+        }
+
+        h6{
+            border-bottom: none;
+            padding: 0;
+            padding-right:0.5em;
+            margin: 0;
+        }
+        h4{
+            border-bottom: 2px solid #333;
+        }
+        .details{
+            margin-block-end: 4em;
+        }
+
+        .tags{
+            color: steelblue;
+            border-color: steelblue !important;
+
+
+            .tag{
+                border: 1px solid steelblue;
+                border-left: 0pt;
+                border-radius: 0pt 5pt 5pt 0pt;
+                margin-right: 2em;
+                padding: 0.2em;
+                padding-right: 1em;
+            }
+            h4{
+                border-bottom: 2px solid steelblue;
+            }
+        }
+
+    }
+
+    .small-images{
+        display: grid;
+        margin-block-start: 2em;
+        grid-template-columns: 50% 50%; 
+        min-height: 30%;
+
+        .sml-image{
+            background-color: blue;
+            min-height: 180px;
+            margin: 0.15em;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            counter-increment: figures;
+            
+        }
+    }
+}
+
+.caption{
+    background-color: rgba(white, 0.8);
+    color: dimgray;
+    border-radius: 0 5pt 0 0;
+    position: absolute;
+    bottom: 0em;
+    padding: 0.4em 0.6em 0.4em 1.5em;
+    font-size: 70%;
+    max-width: 70%;
+
+}
+
+.caption:before{
+    content: 'Fig. ' counter(projects) '.' counter(figures) ' - ';
+    font-weight: bolder;
+    color: black;
+}
+
