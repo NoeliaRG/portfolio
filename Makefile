@@ -11,7 +11,7 @@ CSS_PATH  = assets/css/
 SCSS_FILE = $(wildcard $(CSS_PATH)*.scss)
 CSS_FILE = $(SCSS_FILE:.scss=.css)
 
-TEMPLATE = assets/templates/portfolio-template.html
+TEMPLATE = assets/templates/template2.html
 COMBINED_YAML = portfolio.yaml
 HTML_PORTFOLIO = portfolio.html
 
@@ -24,7 +24,7 @@ $(COMBINED_YAML): $(PORTFOLIO_FILES)
 	cat $^ > $@
 
 $(CSS_FILE): $(SCSS_FILE)
-	sass $^ $@
+	sass $< $@
 
 
 .PHONY: all again
@@ -36,7 +36,7 @@ again: clean all
 css: $(CSS_FILE) $(SCSS_FILE)
 
 portfolio: $(HTML_PORTFOLIO) $(TEMPLATE) $(COMBINED_YAML)
-
+portfolio-again: clean-portfolio portfolio
 portfolio-yaml: $(COMBINED_YAML) $(PORTFOLIO_FILES)
 
 #USEFUL RULES

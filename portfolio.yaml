@@ -3,8 +3,8 @@ title: 2018 Portfolio
 author:
   name: Alan Rynne
   img: blog-author.jpg
-  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
+  description: Hi! My name is Alan Rynne, I am a building engineer from Spain with a recently obtained Master's Degree in Parametric Design for Architecture. I am passionate about bringing together Architecture and technology to improve the way we work and design on a daily basis.
+  
 social:
   - username: www.rynne.es
     link: https://rynne.es
@@ -56,10 +56,16 @@ projects:
   date: September 2018
   website: http://bit.ly/geoPattrn
   images:
-  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
-  - https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
-  - http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
-  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - link: https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - link: http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+
+  small-image:
+  - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - link: https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - link: http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+  - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+
   details:
   - name: Grade
     data: 10/10
@@ -86,10 +92,10 @@ projects:
   website: www.rynne.es
   location: Barcelona (Spain)
   images:
-  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
-  - https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
-  - http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
-  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - link: https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+  - link: http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
+  - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
   details:
   - name: Det.title
     data: Some detail...
@@ -111,7 +117,7 @@ projects:
   date: January 2018
   website: http://bit.ly/chebNet
   images:
-  - https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+  - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
 
   details:
   - name: Det.title
@@ -185,7 +191,7 @@ projects:
   - Lightweight construction
 - title: Urban Landscaping
   subtitle: Random rooftop park designer
-  description: Usiing Rhino+Grasshopper as the main tools
+  description: 
   author: Alan Rynne
   date: May 2018
   images:
@@ -212,18 +218,16 @@ projects:
   - Digital Fabrication
   - Electronics
   - Technology
-
 - title: Urban Data Exploration
   subtitle: Extraction and Analysis of urban public records in Vacarisses.
   description: 
   author: 
-  date: 
-  website: 
+  - Alan Rynne
+  date: May 2018
   images:
   - 
   details:
-  - name: 
-    data: 
+
   tabs:
   - 
   keywords:

@@ -1,0 +1,274 @@
+body {
+  margin: 0em;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen {
+  body {
+    background: #cccccc;
+  }
+
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    overflow: hidden;
+    z-index: -10;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  }
+
+  page[size=A4] {
+    width: 21cm;
+    height: 29.7cm;
+  }
+
+  page[size=A4][layout=landscape] {
+    width: 29.7cm;
+    height: 21cm;
+  }
+
+  page[size=A3] {
+    width: 29.7cm;
+    height: 42cm;
+  }
+
+  page[size=A3][layout=landscape] {
+    width: 42cm;
+    height: 29.7cm;
+  }
+
+  page[size=A5] {
+    width: 14.8cm;
+    height: 21cm;
+  }
+
+  page[size=A5][layout=landscape] {
+    width: 21cm;
+    height: 14.8cm;
+  }
+}
+@media print {
+  body page {
+    margin: 0;
+    box-shadow: 0 !important;
+  }
+
+  page {
+    page-break-before: always;
+  }
+}
+body {
+  counter-reset: projects;
+  counter-increment: projects;
+  counter-reset: pages;
+}
+
+.project, .title-page, .section-title {
+  overflow: hidden;
+  position: relative;
+  counter-reset: figures;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.project .image, .title-page .image, .section-title .image {
+  min-width: 60%;
+  max-width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 90% 0, 100% 15%, 80% 100%, 0 100%);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.project .image .proj-image, .title-page .image .proj-image, .section-title .image .proj-image {
+  position: relative;
+  height: 100%;
+  z-index: 50;
+  background-position: center;
+  background-size: cover;
+  flex-basis: 100%;
+  counter-increment: figures;
+}
+.project .image .proj-image .caption, .title-page .image .proj-image .caption, .section-title .image .proj-image .caption {
+  max-width: 30%;
+}
+.project .image .gradient-bg, .title-page .image .gradient-bg, .section-title .image .gradient-bg {
+  height: 100vh;
+  width: 100%;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2c3e50, #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.project .image :not(:last-child), .title-page .image :not(:last-child), .section-title .image :not(:last-child) {
+  margin-bottom: 0.3em;
+}
+.project .data, .title-page .data, .section-title .data {
+  margin: 3em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.project .data .title, .title-page .data .title, .section-title .data .title {
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  text-shadow: 0.7pt 0.7pt 0px #fff, 1.4pt 1.4pt 0px rgba(105, 105, 105, 0.35);
+}
+.project .data .subtitle, .title-page .data .subtitle, .section-title .data .subtitle {
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  text-indent: 1.5em;
+  font-style: italic;
+  font-weight: 100;
+  color: gray;
+}
+.project .data .project-data, .title-page .data .project-data, .section-title .data .project-data {
+  flex: 1;
+  padding-left: calc(50% + 0.15em);
+  color: dimgray;
+  text-align: justify;
+  line-height: 120%;
+  margin-block-start: 5em;
+}
+.project .details-tags, .title-page .details-tags, .section-title .details-tags {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: calc(15% + 3em);
+  left: 57%;
+  min-height: 15em;
+  min-width: 10em;
+  text-align: right;
+  z-index: 0;
+  font-size: 80%;
+  transform: skewX(-10deg);
+  z-index: -1;
+}
+.project .details-tags h1, .project .details-tags h2, .project .details-tags h3, .project .details-tags h4, .project .details-tags h5, .project .details-tags h6, .project .details-tags p, .title-page .details-tags h1, .title-page .details-tags h2, .title-page .details-tags h3, .title-page .details-tags h4, .title-page .details-tags h5, .title-page .details-tags h6, .title-page .details-tags p, .section-title .details-tags h1, .section-title .details-tags h2, .section-title .details-tags h3, .section-title .details-tags h4, .section-title .details-tags h5, .section-title .details-tags h6, .section-title .details-tags p {
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  transform: skewX(10deg);
+  padding-right: 0.5em;
+  padding-left: 3em;
+}
+.project .details-tags h6, .title-page .details-tags h6, .section-title .details-tags h6 {
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+.project .details-tags h4, .title-page .details-tags h4, .section-title .details-tags h4 {
+  border-bottom: 2px solid #333;
+}
+.project .details-tags p, .title-page .details-tags p, .section-title .details-tags p {
+  color: dimgray;
+}
+.project .details-tags .details, .title-page .details-tags .details, .section-title .details-tags .details {
+  margin-block-end: 5em;
+}
+.project .details-tags .details .detail, .title-page .details-tags .details .detail, .section-title .details-tags .details .detail {
+  border-bottom: 0.5pt dotted gainsboro;
+  margin-block-start: 0.5em;
+}
+.project .details-tags .tags, .title-page .details-tags .tags, .section-title .details-tags .tags {
+  color: dimgray;
+  border-color: dimgray !important;
+}
+.project .details-tags .tags .tag, .title-page .details-tags .tags .tag, .section-title .details-tags .tags .tag {
+  border: 1px solid dimgray;
+  border-left: 0pt;
+  border-radius: 0pt 5pt 5pt 0pt;
+  padding: 0.2em;
+  padding-right: 1em;
+  margin-block-end: 0.8em;
+  padding-left: 3em;
+}
+.project .details-tags .tags h4, .title-page .details-tags .tags h4, .section-title .details-tags .tags h4 {
+  border-bottom: 2px solid dimgray;
+}
+.project .small-images, .title-page .small-images, .section-title .small-images {
+  display: grid;
+  margin-block-start: 2em;
+  grid-template-columns: 50% 50%;
+  min-height: 30%;
+}
+.project .small-images .sml-image, .title-page .small-images .sml-image, .section-title .small-images .sml-image {
+  background-color: blue;
+  min-height: 180px;
+  margin: 0.15em;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  counter-increment: figures;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  border-radius: 0 5pt 0 0;
+  position: absolute;
+  bottom: 0em;
+  padding: 0.4em 0.6em 0.4em 1.5em;
+  font-size: 70%;
+  max-width: 70%;
+}
+
+.caption:before {
+  content: "Fig. " counter(projects) "." counter(figures) " - ";
+  font-weight: bolder;
+  color: white;
+}
+
+.round-img {
+  width: 5em;
+  height: 5em;
+  margin-block-end: 2em;
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 1em auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.social .icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social a {
+  font-size: 130%;
+  margin-block-end: 0.5em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-style: oblique;
+}
+
+/*# sourceMappingURL=template2.css.map */
