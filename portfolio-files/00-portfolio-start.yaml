@@ -1,23 +1,32 @@
 ---
 title: 2018 Portfolio
+title-image: assets/imgs/triangular-gridshell-inside-Andres-Flajszer.jpg
+title-image-caption: Image by Andrés Flajszer
 author:
+  main-image: 
+    - link: assets/imgs/triangular-gridshell-outside-2-Andres-Flajszer.JPG
+      caption: Image by Andrés Flajszer
   name: Alan Rynne
   img: blog-author.jpg
   description: Hi! My name is Alan Rynne, I am a building engineer from Spain with a recently obtained Master's Degree in Parametric Design for Architecture. I am passionate about bringing together Architecture and technology to improve the way we work and design on a daily basis.
-  
+
 social:
   - username: www.rynne.es
     link: https://rynne.es
     logo: fas fa-user
+  - username: alan@rynne.es
+    link: mailto:alan@rynne.es
+    logo: fas fa-at
+  - username: +34 610 53 62 32
+    link:
+    logo: fas fa-phone-square
   - username: /alanrynnevidal
     link: https://es.linkedin.com/in/alanrynnevidal
     logo: fab fa-linkedin-in
   - username: /AlanRynne
     link: http://github.com/AlanRynne
     logo: fab fa-github
-  - username: alan@rynne.es
-    link: mailto:alan@rynne.es
-    logo: far fa-envelope
+
     
   
 academic:

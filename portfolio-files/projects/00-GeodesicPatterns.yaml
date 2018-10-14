@@ -5,9 +5,13 @@
   - Alan Rynne
   date: September 2018
   website: http://bit.ly/geoPattrn
+  main-image: https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+
   images:
   - link: https://archinect.imgix.net/uploads/iu/iuzqr872mhkafzpg.jpg?auto=compress%2Cformat
+    caption: Some caption
   - link: https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNEv2lX15yAI/v1/-1x-1.jpg
+    caption: Another caption
   - link: http://openjournal.com.au/wp-content/uploads/2017/03/71UTS23115.jpg
 
   small-image:

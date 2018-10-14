@@ -36,7 +36,7 @@ again: clean all
 css: $(CSS_FILE) $(SCSS_FILE)
 
 portfolio: $(HTML_PORTFOLIO) $(TEMPLATE) $(COMBINED_YAML)
-portfolio-again: clean-portfolio portfolio
+portfolio-again: clean-yaml clean-portfolio portfolio-yaml portfolio
 portfolio-yaml: $(COMBINED_YAML) $(PORTFOLIO_FILES)
 
 #USEFUL RULES
