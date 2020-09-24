@@ -3,12 +3,10 @@ TEMPLATE = templates/template2.html
 COMBINED_YAML = build/portfolio.yaml
 HTML_PORTFOLIO = docs/index.html
 CSS_PATH  = assets/css/
-FILES_PATH = src/
 
-PROJECTS_PATH = $(FILES_PATH)projects/
-PROJECTS = $(wildcard $(PROJECTS_PATH)*.yaml)
-BEFORE_PROJECTS = $(FILES_PATH)00-portfolio-start.yaml
-AFTER_PROJECTS = $(FILES_PATH)99-portfolio-end.yaml
+PROJECTS = $(wildcard src/projects/*.yaml)
+BEFORE_PROJECTS = src/00-portfolio-start.yaml
+AFTER_PROJECTS = src/99-portfolio-end.yaml
 PORTFOLIO_FILES = $(BEFORE_PROJECTS) $(PROJECTS) $(AFTER_PROJECTS)
 
 

@@ -17,7 +17,7 @@ social-image:
 social:
   - username: www.rynne.es
     link: https://rynne.es
-    logo: fas fa-user
+    logo: fas fa-dog
   - username: alan@rynne.es
     link: mailto:alan@rynne.es
     logo: fas fa-envelope
