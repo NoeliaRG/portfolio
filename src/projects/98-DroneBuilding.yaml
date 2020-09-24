@@ -1,0 +1,29 @@
+- title: DIY Autonomous Drone
+  subtitle: Construction of a UAV 
+  description: |
+    Building  my own drone has been one of the most challenging and fun experiences of my hobby projects so far. It is the perfect combination of electronics, design and engineering and IT FLIES! What else could I wish for?
+
+    Leaving the excitement behind, building it required an insane ammount of time and effort, having to learn from flight mechanics to electronic soldering, chip programming, wireless comunications and a very long list of other tangentally related topics, and tons of hours spent on trial and error. 
+    
+    The drone was fully designed in 3D using Rhino+Grasshopper inspired by previous designs uploaded to Thingiverse.com, and it was created as a Tricopter configuration, which added some extra complexity with the Yaw mechanism. Whle initially built with plywood,all the complex body parts in the final design where either 3D printed in ABS or CNC'd out of carbon fibre using the machines I built myself.
+  author: Alan Rynne
+  date: 2015-2016 
+  main-image: assets/imgs/drone/drone-flying.png
+  images:
+    - link: assets/imgs/drone/drone-flying.png
+    - link: assets/imgs/drone/drone-flying-2.png
+  small-image:
+    - link: assets/imgs/drone/IMG_0972.jpeg
+      caption: Drone in folded configuration
+  details:
+  - name: UAV Platform
+    data: Ardupilot
+  - name: configuration
+    data: Tricopter
+  keywords:
+  - Do It Yourself
+  - UAV
+  - Electronics
+  - Technology
+  - Arduino
+  

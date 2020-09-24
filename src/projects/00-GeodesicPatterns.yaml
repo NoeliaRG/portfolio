@@ -1,0 +1,46 @@
+- title: Geodesic Patterns for Freeform Architecture
+  subtitle: Master Thesis - C# Implementation for Grasshopper
+  description: "Implementation and analysis of different existing techniques to obtain cladding solutions using exclusively straight planks, either wood or metal, in order to weight their benefits and weaknesses from an architectural standpoint. The research was mainly centred on the generation of geodesic curves, more specifically straightest geodesics, which minimize distance between two points on curved surface. For cost and manufacturing reasons, geodesic planks are favorable for cladding solutions, as they can be manufactured and assembled using inexpensive construction techniques. We will also explain some basic structural analysis concepts to check the admissibility of the generated solutions."
+
+  author: 
+  - Alan Rynne
+  date: September 2018
+  website: http://bit.ly/geoPattrn
+  main-image: assets/imgs/geod-patterns/Figure-23.svg
+
+  images:
+  - link: assets/imgs/geod-patterns/Figure-15A.svg
+    caption: Computed pattern using the Evolution method
+  - link: assets/imgs/geod-patterns/Figure-18B.svg
+    caption: Geodesic pattern computed using the Piecewise Evolution method
+  - link: assets/imgs/geod-patterns/Figure-20C.svg
+    caption: Geodesic pattern computed using the Piecewise Evolution method
+
+  small-image:
+  - link: assets/imgs/geod-patterns/Figure-23.svg
+    caption: Level-set method starting configuration
+  - link: assets/imgs/geod-patterns/Figure-24.svg
+    caption: Computed geodesic pattern using the level-set method
+
+  small-image-horizontal: true
+
+  details:
+  - name: Grade
+    data: 10/10
+  - name: University
+    data: ETSAV - UPC
+  - name: Full Text PDF
+    data: missing link!
+  - name: Disclaimer
+    data: This research will be part of a larger book on the topic of *Surface Rationalization* that will be published during 2018/2019.
+
+  tabs:
+  - Rhino
+  - Grasshopper
+  - C#
+  - Optimization
+
+  keywords:
+  - Architectural Geometry
+  - Fabrication-aware design
+  - Freeform architecture

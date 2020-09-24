@@ -1,21 +1,19 @@
 RM=/bin/rm -rf
+TEMPLATE = templates/template2.html
+COMBINED_YAML = build/portfolio.yaml
+HTML_PORTFOLIO = docs/index.html
+CSS_PATH  = assets/css/
+FILES_PATH = src/
 
-FILES_PATH = portfolio-files/
 PROJECTS_PATH = $(FILES_PATH)projects/
 PROJECTS = $(wildcard $(PROJECTS_PATH)*.yaml)
 BEFORE_PROJECTS = $(FILES_PATH)00-portfolio-start.yaml
 AFTER_PROJECTS = $(FILES_PATH)99-portfolio-end.yaml
 PORTFOLIO_FILES = $(BEFORE_PROJECTS) $(PROJECTS) $(AFTER_PROJECTS)
 
-CSS_PATH  = assets/css/
+
 SCSS_FILE = $(wildcard $(CSS_PATH)*.scss)
 CSS_FILE = $(SCSS_FILE:.scss=.css)
-
-TEMPLATE = assets/templates/template2.html
-COMBINED_YAML = portfolio.yaml
-HTML_PORTFOLIO = portfolio.html
-
-
 
 $(HTML_PORTFOLIO): $(COMBINED_YAML)
 	pandoc --template=$(TEMPLATE) $^ -o $@
@@ -23,9 +21,8 @@ $(HTML_PORTFOLIO): $(COMBINED_YAML)
 $(COMBINED_YAML): $(PORTFOLIO_FILES)
 	cat $^ > $@
 
-$(CSS_FILE): $(SCSS_FILE)
+$(CSS_PATH)%.css: $(CSS_PATH)%.scss
 	sass $< $@
-
 
 .PHONY: all again
 

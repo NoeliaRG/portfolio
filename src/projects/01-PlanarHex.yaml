@@ -1,0 +1,27 @@
+- title: Panneling with Planar Hexagons
+  subtitle: 
+  description: "The goal of this research is to understand and expand upon the computational strategies behind planar hexagonal-dominant (PHex) surfaces. Initial exploration was based on several existing techniques: Edge Offset mesh, the Duality approach and the *singularity placement* method.\n\nOut of the three explored methods, the Edge Offset method (which is based on the principle of plane intersections) proved to be the most reliable for generating planar panels, although for complex surfaces this technique needs to be coupled with complex shape optimization algorithms to succesfully generate a watertight panelization.\n\nBoth the singularity placement method and the duality approach require the use of planarization algorithms or their conversion into as a *cyclidic or conical meshes* in order to achieve acceptable results. It would also be possible to panelize this solutions with non-planar panels via clustering techniques, which would also dramatically increase the cost of the solution. The obtained Edge Offset solution was then processed and fabricated at 1/100 scale using digital fabrication techniques.\n\nThis small research paper was elaborated during my attendance at the MPDA'18."
+  author: 
+  - Alan Rynne
+  - Thiago Medeiros
+  - David Granzewich
+  date: September 2017
+  website: www.rynne.es
+  location: Barcelona (Spain)
+  main-image: assets/imgs/planarHex/PHexRotation.gif
+  images:
+  - link: assets/imgs/planarHex/PHexRotation.gif
+    caption: And another one
+  details:
+  - name: Det.title
+    data: Some detail...
+  tabs:
+  - One thing
+  - Second
+  - More stuff
+  - And another
+  - ...
+  - The last one!
+  keywords:
+  - Complex panneling solutions
+  - Architectural geometry

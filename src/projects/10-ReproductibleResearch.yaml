@@ -1,0 +1,22 @@
+- title: Reproductible Research
+  subtitle: Working smarter (and  faster) with Pandoc 
+  description: "During my year at the MPDA'18, there was a need to write our work as a set of scientific publications.\n\nA scientific publication usually exhibits a very strict format, with very little space for the final appearance of the publication. I decided to adopt a new workflow based on GitHub (for version control and co-authoring), Pandoc (a conversion library for Markup formats), LaTeX templating and finally, some Markdown and YAML files to store the data.\n\nI was extremelly satisfied with the result, since it allowed me to concentrate fully on my research, leaving the more 'tedious' parts  (bibliography, cross referencing, formating, etc) to an automated process controled by a Makefile. The result was an easily updatable research paper that could also be published in different journals with little to no effort.\n\nThis portfolio was also generated using the same workflow, enabling the release concurrent HTML and PDF versions. I also wrote a quick tutorial on how to set this workflow up, which you can find at this project's website link."
+  author: Alan Rynne
+  date: 2018
+  website: http://bit.ly/sciPub
+  main-image: assets/imgs/templating/templatingYAML.png
+  images:
+    - link: assets/imgs/templating/templatingHTML.png
+      caption: HTML5 Pandoc template
+    - link: assets/imgs/templating/templatingYAML.png
+      caption: YAML data
+    - link: assets/imgs/templating/templatingCSS.png
+      caption: CSS styles file
+    - link:
+      caption: PDF/HTML Output
+
+  keywords:
+  - GitHub
+  - Markdown
+  - Pandoc
+  - LaTeX

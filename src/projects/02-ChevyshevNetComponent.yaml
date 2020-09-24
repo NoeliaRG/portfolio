@@ -1,0 +1,26 @@
+- title: Chebyshev Net Generation
+  subtitle: Grasshopper component implemented in C#
+  description: "Chebyshev nets are a spetial kind of 3D grid composed only of segments of equal length. They are of special interest when designing elastically-bent structures such as gridshells, since the equal length property of these nets guarantees that the grid could be assembled 'flat' on-site, and later bent to it's final shape by either manual or mechanical means.\n\nDeveloped as an Open Source project, the implementation was made as Rhino+Grasshopper Component since, at that time, there was no available open source tool for the platform.\n\nThe initial code is uploaded to my Github account, and the final release will be available at food4rhino.com in the near future.\n\nMore info on the link in details."
+  author: 
+  - Alan Rynne
+  date: January 2018
+  website: http://bit.ly/chebNet
+  main-image: assets/imgs/HyparSaddleGridshell.gif
+  images:
+  - link: assets/imgs/HyparSaddleGridshell.gif
+
+  details:
+  - name: Programming lang.
+    data: C#
+  - name: Developed as
+    data: Grasshopper Component
+  - name: Status
+    data: Pending release
+  tabs:
+  - Grasshopper
+  - Rhino
+  - C#
+  keywords:
+  - Gridshell design
+  - Active-bending structures
+

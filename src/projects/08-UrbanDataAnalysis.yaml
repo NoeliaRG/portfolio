@@ -1,0 +1,24 @@
+- title: Urban Data Exploration
+  subtitle: Extraction and Analysis of urban public records in Vacarisses.
+  description: |
+    With the expansion of digital technologies and the growing access to public databases, it is more necessary than ever to be able to take advantage of every bit of information to empower our decision making. In this case, Vacarisses, a small town in the Barcelona area (Spain), was chosen as the object of the study in order to analyze the energy efficiency of the towns buildings and it's possible repercussions.
+
+    Public and private databases where used in order to cross information that resulted in the graph bellow, although data was severely limited due to privacy regulations in Spain, it was possible to visualize the correlation of the different energy qualifications (A to G) to the existing legislation in spain on that matter, and also quantify average emissions for each household per  year.
+  author: 
+  - Alan Rynne
+  date: May 2018
+  location: Vacarisses (Spain)
+  main-image: assets/imgs/planning/3DCloseUpViewVacarissesByYear.jpg
+  images:
+  - link: assets/imgs/planning/3DCloseUpViewVacarissesByYear.jpg
+  details:
+  - name: Data collected from
+    data: 
+      - Catastro
+      - Lidar Scans
+      - Property Registry
+      - Idealista
+      - Fotocasa
+  keywords:
+  - Custom CAT reader
+  

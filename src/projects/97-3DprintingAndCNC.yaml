@@ -1,0 +1,28 @@
+- title: 3D Printing & CNC Machining
+  subtitle: DIY build for hobby purposes
+  description: "I have always been intrigued and driven by technology and during the years I have embarked in several hobby projects to investigate new (and not so new...) available technologies like 3D Printing and CNC machining.\n\nI started building my first 3D printer in 2014, eventualy abandoning that project in 2015 in favor of a DIY Prusa i3 model which was Open Source.\n\nIn 2016, I took on the challenge of building my own home CNC machine (50x50cm bedsize), which was also Open Source. Both 3D printer and CNC machine were used to build many of the parts of my other 2016 hobby project, a fully automous UAV (see project on the next page).\n\nI also posess experience in handling industrial sized CNC machines and professional Laser and Knife 2D cutters."
+  author: Alan Rynne
+  date: 2014-2016
+  main-image: assets/imgs/shapeoko.jpg
+  images:
+  - link: assets/imgs/3DPrint-CNC-Laser/shapeoko-1.jpg
+  - link: assets/imgs/3DPrint-CNC-Laser/3dprint-2.jpg
+  - link: assets/imgs/3DPrint-CNC-Laser/3dprint-1.jpg
+  - link: assets/imgs/3DPrint-CNC-Laser/3dprint-4.jpg
+  small-image:
+  - link: assets/imgs/3DPrint-CNC-Laser/laser-lamp-cuts.jpeg
+    caption: Laser cut lamp parts
+  - link: assets/imgs/3DPrint-CNC-Laser/laser-lamp.jpeg
+    caption: Lamp prototype
+  details:
+  - name: CNC Machine
+    data: Shapeoko
+  - name: 3D Printer
+    data: Prusa i3
+  tabs:
+
+  keywords:
+  - Do It Yourself
+  - Digital Fabrication
+  - Electronics
+  - Technology
